@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 // mongodb connection
 mongoose
-  .connect('mongodb://localhost:27018/TP2-DACS-DB')
+  .connect('mongodb://mongo:27017/TP2-DACS-DB')
   .then(() => console.log('Connected to TP2 DataBase'))
   .catch((error) => console.error(error));
 
