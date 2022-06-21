@@ -1,10 +1,11 @@
 # TP2-DACS DOCKER
 
 ## INSTALACION
-1. docker compose up -d
+- docker compose up -d
+- node app is running in port 3000.
 
-## Para parar de correr el contenedor
-1. docker-compose stop
+## Para parar ejecucion de el contenedor
+- docker-compose stop
 
 ## Para eliminar contenedores
-1. docker-compose down
+- docker-compose down
