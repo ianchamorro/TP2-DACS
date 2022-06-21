@@ -7,4 +7,4 @@
 1. docker-compose stop
 
 ## Para eliminar contenedores
-1. docker-compuse down
+1. docker-compose down
