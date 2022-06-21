@@ -28,6 +28,7 @@ export class PlayerController {
         req.params.id,
         req.body
       );
+      
       if (!updatedPlayer) throw { message: "error" };
       return res.status(201).json(updatedPlayer);
     } catch (error) {

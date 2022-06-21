@@ -34,6 +34,6 @@ COPY --from=appbuild /home/node/app/dist ./dist
 
 COPY --chown=node:node . .
 
-EXPOSE 3000
+#EXPOSE ${PORT}
 
 CMD npm start

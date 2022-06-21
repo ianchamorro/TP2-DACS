@@ -19,7 +19,6 @@ router.get("/players/:id", (req, res) => {
 
 // CREATE Player
 router.post("/players", playerController.createPlayer);
-
 // UPDATE Player
 router.put("/players/:id", playerController.updatePlayer);
 
