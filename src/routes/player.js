@@ -6,9 +6,7 @@ let playerController = new PlayerController();
 const router = Router();
 
 // GET ALL Players
-router.get("/players", (req, res) => {
-  playerController.getAll;
-});
+router.get("/players", playerController.getAll);
 
 // GET Player by id
 router.get("/players/:id", (req, res) => {
@@ -20,18 +18,12 @@ router.get("/players/:id", (req, res) => {
 });
 
 // CREATE Player
-router.post("/players", (req, res) => {
-  playerController.createPlayer;
-});
+router.post("/players", playerController.createPlayer);
 
 // UPDATE Player
-router.put("/players/:id", (req, res) => {
-  playerController.updatePlayer;
-});
+router.put("/players/:id", playerController.updatePlayer);
 
 // DELETE Player
-router.delete("/players/:id", (req, res) => {
-  playerController.deletePlayer;
-});
+router.delete("/players/:id", playerController.deletePlayer);
 
 module.exports = router;
