@@ -11,12 +11,13 @@ app.use('/api', playerRoutes);
 
 // routes
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.send('GET INTO /API/PLAYERS');
 });
 
 // mongodb connection
+//if you want to use your connection local you change localhost instead of mongo
 mongoose
-  .connect('mongodb://mongo:27017/TP2-DACS-DB')
+  .connect('mongodb://mongo:27017/TP2-DACS-DB?directConnection=true')
   .then(() => console.log('Connected to TP2 DataBase'))
   .catch((error) => console.error(error));
 
